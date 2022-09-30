@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main layout -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FirstActivity"
+    android:background="@color/white">
+    <!--Create personalized toolbar-->
+    <com.google.android.material.appbar.AppBarLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/textSize"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/white"
+                android:text="@string/app_prpfile" />
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <!-- Main vertical Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.oscarmiralles_madp711_a1.FirstActivity">
+        <!-- Horizontal layouts to put the elements together -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="@dimen/marginStat"
+                android:text="@string/yourName"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fontSize" />
+
+            <EditText
+                android:id="@+id/fullName"
+                android:layout_width="@dimen/textWidth"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="40dp"
+                android:inputType="text"
+                android:hint="@string/nameExample" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="@dimen/marginStat"
+                android:text="@string/yourProvince"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fontSize" />
+            <!-- Spinner with scroll bar-->
+            <Spinner
+                android:id="@+id/province"
+                android:layout_width="249dp"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:verticalScrollbarPosition="left"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginStat"
+                android:layout_marginTop="80dp"
+                android:text="@string/yourQualify"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fontSize"
+                android:textStyle="italic"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="273dp" />
+            <!--RadioGroup first item selected by default -->
+            <RadioGroup
+                android:id="@+id/qualifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkedButton="@id/associate"
+                android:layout_marginStart="@dimen/marginStat"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/associate"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/radioButton1Text" />
+
+                <RadioButton
+                    android:id="@+id/bachelor"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/radioButton2Text" />
+
+                <RadioButton
+                    android:id="@+id/master"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/radioButton3Text" />
+
+                <RadioButton
+                    android:id="@+id/doctorate"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/radioButton4Text" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginStat"
+                android:layout_marginTop="20dp"
+                android:text="@string/yourHobby"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fontSize"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/hobby"
+                android:layout_width="@dimen/textWidth"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:hint="@string/hobbyExample" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="@dimen/marginStat"
+                android:text="@string/yourDreamJob"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fontSize"/>
+            <EditText
+                android:id="@+id/dreamJob"
+                android:layout_width="@dimen/textWidth"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginStat"
+                android:layout_marginTop="40dp"
+                android:inputType="text"
+                android:hint="@string/dreamJobExample" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="@dimen/marginStat"
+            android:layout_marginRight="@dimen/marginStat"
+            android:onClick="buttonSend"
+            android:background="@color/purple_500"
+            android:textColor="@color/white"
+            android:text="@string/buttonSend"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

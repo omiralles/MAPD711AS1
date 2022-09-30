@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Assignment 1</string>
+    <string name="app_prpfile">My profile</string>
+    <string name="yourName">Full Name</string>
+    <string name="yourProvince">Province</string>
+    <string name="yourQualify">Qualification</string>
+    <string name="yourHobby">Hobby</string>
+    <string name="yourDreamJob">Dream Job</string>
+    <string name="buttonSend">Send</string>
+    <string name="nameExample">i.e. John Doe</string>
+    <string name="hobbyExample">i.e. Video Games</string>
+    <string name="dreamJobExample">i.e. Lead Mobile Engineer</string>
+    <string name="radioButton1Text">Associates</string>
+    <string name="radioButton2Text">Bachelors</string>
+    <string name="radioButton3Text">Masters</string>
+    <string name="radioButton4Text">Doctorate</string>
+    <string-array name="provinces_array">
+        <item>"Alberta"</item>
+        <item>"British Columbia"</item>
+        <item>"Manitoba"</item>
+        <item>"New Brunswick"</item>
+        <item>"Newfoundland and Labrador"</item>
+        <item>"Northwest Territories"</item>
+        <item>"Nova Scotia"</item>
+        <item>"Nunavut"</item>
+        <item>"Ontario"</item>
+        <item>"Prince Edward Island"</item>
+        <item>"Quebec"</item>
+        <item>"Saskatchewan"</item>
+        <item>"Yukon"</item>
+    </string-array>
+</resources>

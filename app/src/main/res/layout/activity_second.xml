@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main layout -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SecondActivity">
+    <!--Create personalized toolbar-->
+    <com.google.android.material.appbar.AppBarLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/textSize"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/white"
+                android:text="@string/app_name" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle_imageView"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="90dp"
+                android:padding="8dp"
+                android:onClick="buttonSetting"
+                android:src="@drawable/ic_action_settings" />
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <!-- Main vertical Layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Horizontal layouts to put the elements together -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginStart="@dimen/marginStat"
+                android:text="@string/yourName"
+                android:textStyle="italic"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/fontSize" />
+
+            <TextView
+                android:id="@+id/texViewName"
+                android:layout_width="@dimen/textWidth"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="60dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:layout_marginStart="@dimen/marginStat"
+                android:text="@string/yourProvince"
+                android:textStyle="italic"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/fontSize" />
+
+            <TextView
+                android:id="@+id/textViewProvince"
+                android:layout_width="@dimen/textWidth"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="@dimen/marginTop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginStat"
+                android:layout_marginTop="@dimen/marginTop"
+                android:text="@string/yourQualify"
+                android:textColor="@color/teal_200"
+                android:textSize="@dimen/fontSize"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/textViewQualify"
+                android:layout_width="@dimen/textWidth"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginStat"
+                android:layout_marginTop="@dimen/marginTop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginStat"
+                android:layout_marginTop="@dimen/marginTop"
+                android:text="@string/yourHobby"
+                android:textColor="@color/teal_700"
+                android:textSize="@dimen/fontSize"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/textViewHobby"
+                android:layout_width="@dimen/textWidth"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="@dimen/marginTop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:layout_marginStart="@dimen/marginStat"
+                android:text="@string/yourDreamJob"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fontSize"/>
+
+            <TextView
+                android:id="@+id/textViewDreamJob"
+                android:layout_width="@dimen/textWidth"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="@dimen/marginTop" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

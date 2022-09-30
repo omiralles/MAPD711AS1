@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fontSize">20sp</dimen>
+    <dimen name="textSize">20dp</dimen>
+    <dimen name="marginStat">20dp</dimen>
+    <dimen name="textWidth">249dp</dimen>
+    <dimen name="marginTop">30dp</dimen>
+</resources>
